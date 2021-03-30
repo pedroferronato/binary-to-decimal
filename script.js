@@ -1,5 +1,5 @@
 function validar(e) {
-    if (e.key == 0 || e.key == 1 || e.key == "Backspace") return true;
+    if (e.key == 0 || e.key == 1 || e.key == "Backspace" || e.key == "Control" || e.key == "v" || e.key == "c") return true;
     else return false;
 }
 
@@ -7,7 +7,6 @@ var app = new Vue({
     el: '#app',
     data: {
         binario: null,
-        invalido: false
     },
     computed: {
         converter: function () {

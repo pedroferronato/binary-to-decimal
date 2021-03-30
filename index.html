@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Conversor binário -> decimal</title>
 </head>
+
 <body>
-    <div id="app">
-        <h1>Conversor binário para decimal</h1>
-        <label for="inputBinario">Insira o valor binário</label>
-        <p id="aviso" class="invalido" v-if="invalido">Insira somente caracteres binários (1 ou 0)</p>
-        <input id="inputBinario" type="text" onkeydown="return validar(event)" v-model="binario">
-        
-        <p>Resultado: {{ converter }}</p>
+    <div class="contentor">
+        <div id="app">
+            <h1>Conversor binário para decimal</h1>
+            <label for="inputBinario">Insira o valor binário:</label>
+            <input id="inputBinario" type="text" onkeydown="return validar(event)" v-model="binario">
+
+            <p>Resultado: {{ converter }}</p>
+        </div>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="script.js"></script>
+
 </html>
